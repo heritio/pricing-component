@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title> Interactive pricing component</title>
+
+
+</head>
+<body>
+ 
+  <div class="container">
+    <h1 class="title">
+      Simple, traffic-based pricing
+      <img class="bg__img" src="./images/pattern-circles.svg" alt="container-bg">
+    </h1>
+
+    <p class="under-title">
+      Sign-up for our 30-day trial. No credit card required. 
+    </p>
+    
+    <div class="component">
+       <div class="component__header"><p class="component__pageview">100</p><p>K PAGEVIEWS</p></div> 
+       <div class="component__slider-container" >
+        <input type="range" min="1" max="100" value="50" class="component__slider" id="myRange">
+       </div>
+       <div class="component__price"><h1 class="component__price-amount">$16.00</h1><small>/month</small></div>
+       <div class="component__billing">
+         <p class="component__billing-title">Monthly Billing</p>
+         <div class="component__billing-toggle">
+          <label class="component__switch">
+            <input type="checkbox">
+            <span class="component__switch-slider"></span>
+          </label>
+         </div>
+         <p class="component__billing-yearly">Yearly Billing</p>
+         <div class="component__billing-discount"><p class="component__billing-discount-val"><p class="hide-desktop">-</p>25%</p><p class="component__billing-discount-label hide-mobile">discount</p></div> 
+       </div>
+       <div class="component__footer">
+         <div class="component__footer-benefits">
+           <div class="component__footer-benefits-component"><img src="./images/icon-check.svg" alt=""><p>Unlimited websites</p></div>
+           <div class="component__footer-benefits-component"><img src="./images/icon-check.svg" alt=""><p>100% data ownership</p></div>
+           <div class="component__footer-benefits-component"><img src="./images/icon-check.svg" alt=""><p>Email reports</p></div>
+         </div>
+         <button class="component__footer-btn">Start my trial</button>
+       </div>
+    </div>
+  </div>
+  <div class="bg-container">
+    
+  </div>
+ 
+ <script src="script.js"></script>
+</body>
+
+</html>
