@@ -135,6 +135,23 @@ body, html {
   margin-right: .5rem;
 }
 
+.component__billing {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.component__billing-yearly {
+  margin: 0 .5rem;
+}
+
+.component__billing-title {
+  padding: 0 0 0 1rem;
+}
+
+.component__billing-toggle {
+  margin: 0 1.2rem;
+}
+
 .component__slider-container {
   max-width: 90%;
   margin: 0 auto;
@@ -234,6 +251,9 @@ body, html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: var(--light-red-discount-text);
+  background-color: var(--light-grayish-red-discount-bg);
+  border-radius: 10rem;
 }
 
 .component__switch {
@@ -273,6 +293,13 @@ body, html {
   -webkit-transition: .4s;
   transition: .4s;
   border-radius: 50%;
+}
+
+@media only screen and (max-width: 37rem) {
+  .component__switch-slider {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
 }
 
 .component__footer {
@@ -382,13 +409,13 @@ input:checked + .component__switch-slider:before {
 
 @media only screen and (min-width: 37rem) {
   .hide-desktop {
-    visibility: hidden;
+    display: none;
   }
 }
 
 @media only screen and (max-width: 37rem) {
   .hide-mobile {
-    visibility: hidden;
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

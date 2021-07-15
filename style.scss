@@ -114,11 +114,21 @@ body,html{
         margin-right: .5rem;
     }
     &__billing{
-        
+        padding-top: 1rem;
+         padding-bottom: 2rem;
         
         
     }
-
+    
+    &__billing-yearly{
+        margin: 0 .5rem;
+    }
+  &__billing-title{
+    padding: 0 0 0 1rem;
+  }
+  &__billing-toggle{
+      margin: 0 1.2rem;
+  }
     &__slider-container{
        
        max-width: 90%;
@@ -203,6 +213,9 @@ body,html{
         display: flex;
         justify-content: center;
         align-items: center;
+        color: var(--light-red-discount-text);
+        background-color: var(--light-grayish-red-discount-bg);
+        border-radius: 10rem;
     }
     &__billing-discount-val{
         
@@ -245,7 +258,10 @@ body,html{
 
           
         }
-        
+        @media only screen and (max-width: 37rem) {
+            transform: scale(1.4);
+
+        }
       
     }
 
@@ -320,11 +336,11 @@ input:checked + .component__switch-slider {
   //hide or show on mobile or desktop
 .hide-desktop{
     @media only screen and (min-width: 37rem) {
-        visibility: hidden;
+        display: none;
     }
 }
 .hide-mobile{
     @media only screen and (max-width: 37rem) {
-        visibility: hidden;
+        display: none;
     }
 }
