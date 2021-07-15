@@ -109,7 +109,7 @@ body, html {
       -ms-flex-align: center;
           align-items: center;
   color: var(--grayish-blue-text);
-  margin: 1rem auto;
+  margin: 0 auto 2rem auto;
   font-size: 1.3rem;
 }
 
@@ -125,6 +125,7 @@ body, html {
           align-items: center;
   margin: 1rem auto;
   color: var(--dark-desaturated-blue-cta-bg);
+  padding-top: 1rem;
 }
 
 .component__price small {
